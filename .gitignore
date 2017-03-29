@@ -1,3 +1,6 @@
 assets/nature-email-assets
+old/
+assets/ref/
 .DS_Store
 *.otf
+*.zip
