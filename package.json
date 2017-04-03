@@ -4,8 +4,8 @@
   "description": "HTML email template",
   "main": "newsletter-boilerplate.html",
   "scripts": {
-    "concat:a": "sh compile-template-a.sh",
-    "concat:b": "sh compile-template-b.sh"
+    "concat:a": "sh scripts/compile-template-a.sh",
+    "concat:b": "sh scripts/compile-template-b.sh"
   },
   "repository": {
     "type": "git",
