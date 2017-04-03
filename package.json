@@ -1,0 +1,21 @@
+{
+  "name": "nature-email",
+  "version": "1.0.0",
+  "description": "HTML email template",
+  "main": "newsletter-boilerplate.html",
+  "scripts": {
+    "concat:a": "sh compile-template-a.sh",
+    "concat:b": "sh compile-template-b.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-creditdesign/nature-email.git"
+  },
+  "author": "@naturenews",
+  "bugs": {
+    "url": "https://github.com/chris-creditdesign/nature-email/issues"
+  },
+  "homepage": "https://github.com/chris-creditdesign/nature-email#readme",
+  "devDependencies": {
+  }
+}
