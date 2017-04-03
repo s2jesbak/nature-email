@@ -12,7 +12,7 @@ cat \
       ./modules/article-no-image.html \
       ./modules/horizontal-line.html \
       ./modules/article-no-image.html \
-      ./modules/banner-opinions-and-analysis.html \
+      ./modules/banner-features-and-analysis.html \
       ./modules/article-no-image.html \
       ./modules/horizontal-line.html\
       ./modules/article-no-image.html \
