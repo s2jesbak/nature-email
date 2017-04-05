@@ -28,6 +28,6 @@ cat \
       ./modules/banner-books-and-arts.html \
       ./modules/article-no-image.html \
       ./modules/horizontal-line.html \
-      ./modules/article-no-image.html \
+      ./modules/article-column-width-image.html \
       ./modules/footer.html \
     > newsletter-template-b.html
