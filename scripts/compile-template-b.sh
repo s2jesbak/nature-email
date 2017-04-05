@@ -29,6 +29,5 @@ cat \
       ./modules/article-no-image.html \
       ./modules/horizontal-line.html \
       ./modules/article-no-image.html \
-      ./modules/the-last-word.html \
       ./modules/footer.html \
     > newsletter-template-b.html
