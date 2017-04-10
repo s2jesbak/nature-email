@@ -1,0 +1,32 @@
+<wrapper class="letter-header">
+  <row>
+    <columns class="letter-header__container">
+      <center>
+        <img height="30" class="letter-header__logo" alt="Nature Daily" src="assets/img/2_nature-daily-logo.png"/>
+      </center>
+    </columns>
+  </row>
+
+  <row>
+    <th class="letter-header__date text-right">
+      {{#if date}}
+      {{ date }}
+      {{ else }}
+      Please set date
+      {{/if}}
+    </th>
+  </row>
+</wrapper>
+
+<wrapper class="letter-intro">
+  <row>
+    <columns>
+      <h2>Hello Nature Readers,</h2>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h3>Here's our pick of today's science stories.</h3>
+    </columns>
+  </row>
+</wrapper>

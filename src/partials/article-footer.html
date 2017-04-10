@@ -1,0 +1,54 @@
+<row class="article__footer">
+  <columns valign="middle">
+    <p class="article__ref">
+      Nature |
+      {{#if readtime}}
+      {{ readtime}}
+      {{else}}
+      Please set readtime
+      {{/if}}
+    </p>
+    {{#if source }}
+    <p class="article__ref">
+      {{{ source }}}
+    </p>
+    {{/if}}
+
+  </columns>
+  <columns valign="middle" class="article__social">
+    <row>
+
+      <th class="expander"></th>
+
+      {{#if social }}
+      <th valign="middle" class="article__social__text">
+        Share
+      </th>
+      {{/if}}
+
+      {{#if mail }}
+      <th valign="middle" class="article__social__icon">
+        <a href="{{ mail }}">
+          <img  height="20" alt="email" src="assets/img/mail.png"/>
+        </a>
+      </th>
+      {{/if }}
+
+      {{#if twitter }}
+      <th valign="middle" class="article__social__icon">
+        <a href="{{ twitter }}">
+          <img height="20" alt="twitter" src="assets/img/twitter.png"/>
+        </a>
+      </th>
+      {{/if }}
+
+      {{#if facebook }}
+      <th valign="middle" class="article__social__icon">
+        <a href="{{ facebook }}">
+          <img height="20" alt="facebook" src="assets/img/facebook.png"/>
+        </a>
+      </th>
+      {{/if }}
+    </row>
+  </columns>
+</row>

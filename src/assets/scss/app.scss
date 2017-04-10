@@ -1,0 +1,132 @@
+@import 'settings';
+@import './foundation-emails/foundation-emails';
+@import 'template/template';
+@import 'email';
+@import 'letter';
+@import 'article';
+@import 'section-title';
+
+.body {
+  //background-color: $body-background !important;
+  //background: $body-background !important;
+}
+
+
+.alt-font {
+  font-family: 'Lora', serif !important;
+}
+.underline {
+  text-decoration: underline !important;
+}
+.bold {
+  font-weight: bold !important;
+}
+.text-light {
+  color: $gray !important;
+}
+.text-white {
+    color: $white !important;
+}
+
+.bg-red {
+  background-color: $red;
+}
+.bg-green {
+  background-color: #85AD1C;
+}
+.bg-blue {
+  background-color: $blue;
+}
+.bg-gray {
+  background-color: $gray;
+}
+.bg-text-gray {
+  background-color: $text-gray;
+}
+.bg-thought {
+  background-color: $thought-blue;
+}
+.bg-light-gray {
+  background-color: $light-gray;
+}
+
+.podcast {
+  img {
+    max-width: none;
+  }
+}
+
+.image {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  th {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  &__caption {
+    padding-top: 0px;
+    margin: 0px;
+    padding: 10px;
+    color: $dark-gray;
+    font-size: 12px;
+    font-family: SourceSansPro, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+}
+
+.article-divider {
+  padding-bottom: 1px !important;
+  border-bottom: 1px solid $medium-gray;
+}
+
+.thought {
+  background-color: $thought-blue;
+
+  .wrapper-inner {
+    padding-top: $global-padding;
+  }
+
+  &__title {
+    color: $white;
+    font-family: 'Lora', serif;
+    padding-bottom: 0px !important;
+    margin: 0px;
+    font-size: 25px;
+  }
+  &__content {
+    color: $light-blue;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0px;
+  }
+  &__footer {
+    font-size: 14px;
+    margin: 0px;
+    color: $white;
+    font-family: SourceSansPro, sans-serif;
+    font-weight: 400;
+
+  }
+}
+
+.wrap {
+  width: 100%;
+
+  &__inner {
+    padding: $global-gutter;
+    padding-top: 0px;
+    padding-bottom: $global-padding;
+  }
+
+  .wrapper-inner {
+    padding-top: $global-padding;
+  }
+
+}

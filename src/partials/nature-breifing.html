@@ -1,0 +1,32 @@
+<wrapper class="letter-header">
+  <row>
+    <columns class="letter-header__container">
+      <center>
+        <img height="30" class="letter-header__logo" alt="Nature Briefing" src="assets/img/1_nature-briefing-logo.png"/>
+      </center>
+    </columns>
+  </row>
+
+  <row>
+    <th class="letter-header__date text-right">
+      {{#if date}}
+      {{ date }}
+      {{ else }}
+      Please set date
+      {{/if}}
+    </th>
+  </row>
+</wrapper>
+
+<wrapper class="letter-intro">
+  <row>
+    <columns>
+      <h2>{{ headline }}</h2>
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h3>{{ subline }}</h3>
+    </columns>
+  </row>
+</wrapper>

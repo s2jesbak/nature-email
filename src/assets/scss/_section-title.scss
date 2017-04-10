@@ -1,0 +1,17 @@
+.section-title {
+  width: 100%;
+  
+  &__inner {
+    padding: 0px 32px 16px 32px;
+  }
+  &__wrapper {
+    
+      .wrapper-inner {
+        padding: 5px 25px 5px 15px;
+        color: $white;
+        font-family: 'Knockout', 'Oswald', sans-serif;
+        font-size: 17px;
+        line-height: 1;
+      }
+  }
+}

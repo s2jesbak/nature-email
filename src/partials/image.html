@@ -1,0 +1,21 @@
+<wrapper class="image">
+  <row>
+    <columns>
+      <center>
+        {{#if url }}
+        <img alt="{{ alt }}" src="{{ url }}">
+        {{else}}
+        <img alt="placeholder" src="assets/img/500x300.png">
+        {{/if}}
+      </center>
+    </columns>
+  </row>
+
+  {{#if caption}}
+  <row>
+    <th class="image__caption text-center columns first last">
+      {{ caption }}
+    </th>
+  </row>
+  {{/if}}
+</wrapper>

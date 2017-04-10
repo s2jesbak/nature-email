@@ -1,0 +1,57 @@
+.article {
+
+  &__title, &__title a{
+    color: $dark-blue;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    margin: 0px;
+  }
+  &__content{
+    color: $text-gray;
+    font-family: SourceSansPro,sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0px;
+    font-size: 15px;
+  }
+
+  &__footer{
+    font-size: 12px;
+  }
+
+  &__ref, &__social {
+    color: $dark-gray;
+    font-size: 12px;
+    line-height: 2;
+    margin-bottom: 0px;
+    font-family: SourceSansPro,sans-serif;
+    font-weight: 400;
+  }
+
+  &__social {
+    text-align: right;
+    vertical-align: middle;
+
+    th {
+      padding-bottom: 0px;
+    }
+
+    &__text {
+      font-size: 12px;
+      color: $dark-gray;
+      text-align: right;
+      padding-top: 0;
+      margin: 0px !important;
+      padding-right: 5px;
+      font-family: SourceSansPro,sans-serif;
+      font-weight: 400;
+    }
+
+    &__icon {
+      width: 20px;
+      padding-right: 8px;
+    }
+  }
+}
