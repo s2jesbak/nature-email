@@ -5,18 +5,21 @@
         <img height="150" width="150" alt="Nature Podcast logo" src="assets/img/podcast.png"/>
       </wrapper>
     </columns>
-    <columns large="8">
-      <h4 class="article__title">
+    <columns large="8" class="article__title">
+      <h4>
         Nature Podcast
       </h4>
       <p class="article__content">
-        <b>Predictive policing</b>
+        <b>{{ title }}</b>
+
         <br />
-        What are the pros and pitfalls of predicting crimes?
-        <a href="https://www.google.co.uk">Comment: Reform predictive policing</a>
+
+        {{{ content }}}
+
         <br />
+
         <span class="text-light">
-          Jeffrey Brantingham
+          {{ author }}
         </span>
       </p>
     </columns>

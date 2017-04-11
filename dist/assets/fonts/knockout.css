@@ -4,13 +4,6 @@
 }
 
 @font-face {
-  font-family: Lora;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lora/v10/4vqKRIwnQQGUQQh-PnvdMA.woff2) format("woff2");
-}
-
-@font-face {
   font-family: SourceSansPro;
   font-style: normal;
   font-weight: 400;

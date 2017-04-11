@@ -41,9 +41,6 @@ table {
 
 td {
   word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
   border-collapse: collapse !important; }
 
 table, tr, td {
@@ -150,9 +147,6 @@ th.expander {
   width: 0;
   padding: 0 !important; }
 
-th.text-center {
-  text-align: center; }
-
 th.text-left {
   text-align: left; }
 
@@ -171,6 +165,17 @@ th.float-center {
   Margin: 0 auto;
   float: none;
   text-align: center; }
+
+body,
+table.body,
+h2,
+h3,
+h4,
+p,
+td,
+th,
+a {
+  text-align: left; }
 
 h2 {
   font-size: 30px; }
@@ -324,6 +329,7 @@ html,
   .email-footer__locations {
     text-decoration: underline;
     margin-bottom: 0px;
+    font-weight: bold;
     font-weight: bold; }
   .email-footer__copy {
     font-size: 10px;
@@ -334,6 +340,8 @@ html,
   padding-top: 40px; }
   .letter-header .wrapper-inner {
     padding-top: 40px; }
+  .letter-header img {
+    color: white; }
   .letter-header__container {
     padding-bottom: 5px !important; }
   .letter-header__date {
@@ -342,7 +350,8 @@ html,
     margin: 0px;
     color: white;
     font-size: 12px;
-    font-family: SourceSansPro,sans-serif; }
+    font-family: SourceSansPro,sans-serif;
+    font-weight: 400; }
 
 .letter-intro .wrapper-inner {
   padding-top: 16px;
@@ -350,7 +359,7 @@ html,
 
 .letter-intro h2 {
   font-size: 20px;
-  font-family: Lora, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin-bottom: 0px;
   margin: 0px;
@@ -364,7 +373,7 @@ html,
   font-family: SourceSansPro,sans-serif; }
 
 .sign-off__text {
-  color: #727277;
+  color: #4A4A4A;
   font-family: SourceSansPro,sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -377,7 +386,7 @@ html,
   text-decoration: none; }
 
 .letter-footer__title {
-  font-family: 'Lora', serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: #C31826;
   font-size: 50px;
   margin-bottom: 0;
@@ -393,13 +402,23 @@ html,
   font-weight: 400;
   color: #4A4A4A; }
 
-.article__title, .article__title a {
-  color: #226498;
+.article__title th {
+  padding: 0; }
+
+.article__title h4 {
+  margin: 0px;
+  color: #4A4A4A;
   font-size: 22px;
   font-weight: bold;
-  font-family: 'Lora', serif;
-  text-decoration: none;
-  margin: 0px; }
+  font-family: Helvetica, Arial, sans-serif; }
+  .article__title h4 a {
+    text-decoration: none;
+    color: #4A4A4A; }
+
+.article.bg-light-gray .article__title h4 {
+  color: #006699; }
+  .article.bg-light-gray .article__title h4 a {
+    color: #006699; }
 
 .article__content {
   color: #4A4A4A;
@@ -420,6 +439,9 @@ html,
   font-family: SourceSansPro,sans-serif;
   font-weight: 400; }
 
+.article__ref {
+  margin-left: 0px; }
+
 .article__social {
   text-align: right;
   vertical-align: middle; }
@@ -436,6 +458,9 @@ html,
     font-family: 'Knockout', 'Oswald', sans-serif;
     font-size: 17px;
     line-height: 1; }
+
+img {
+  border: none; }
 
 .text-light {
   color: #78787E !important; }
@@ -465,14 +490,18 @@ html,
   width: 100%;
   height: auto; }
 
-.image th {
+.image__image th {
   padding-left: 0px !important;
-  padding-right: 0px !important; }
+  padding-right: 0px !important;
+  padding-bottom: 3px !important; }
 
 .image__caption {
-  padding-top: 0px;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  text-align: left;
   margin: 0px;
   padding: 10px;
+  padding-top: 0px;
   color: #727277;
   font-size: 12px;
   font-family: SourceSansPro, sans-serif;
@@ -485,18 +514,20 @@ html,
 
 .thought {
   background-color: #006699; }
+  .thought--gray {
+    background-color: #F3F3F3; }
   .thought .wrapper-inner {
     padding-top: 16px; }
   .thought__title {
     color: white;
-    font-family: 'Lora', serif;
+    font-family: Helvetica, Arial, sans-serif;
     padding-bottom: 0px !important;
     margin: 0px;
     font-size: 25px; }
   .thought__content {
     color: #A0C6D9;
     font-size: 20px;
-    font-family: 'Lora', serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     line-height: 1.5;
     margin: 0px; }
@@ -506,6 +537,11 @@ html,
     color: white;
     font-family: SourceSansPro, sans-serif;
     font-weight: 400; }
+  .thought--gray .thought__content {
+    color: #006699; }
+  .thought--gray .thought__title,
+  .thought--gray .thought__footer {
+    color: #4A4A4A; }
 
 .wrap {
   width: 100%; }

@@ -1,7 +1,11 @@
 <container class="email-header header">
   <row>
     <th class="columns first last">
-      Trouble view this email? <a href="{{ url }}">View it in your browser</a>
+      {{#if url}}
+      Trouble viewing this email? <a href="{{ url }}">View it in your browser</a>
+      {{else}}
+      Please set URL on email header component
+      {{/if}}
     </th>
   </row>
 </container>

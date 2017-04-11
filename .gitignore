@@ -7,4 +7,3 @@ node_modules/
 *.otf
 *.zip
 config.json
-dist

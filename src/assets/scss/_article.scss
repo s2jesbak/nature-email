@@ -1,13 +1,31 @@
 .article {
 
-  &__title, &__title a{
-    color: $dark-blue;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Lora', serif;
-    text-decoration: none;
-    margin: 0px;
+  &__title {
+    th {
+      padding: 0;
+    }
+    h4{
+       margin: 0px;
+       color: $text-gray;
+       font-size: 22px;
+       font-weight: bold;
+       font-family: Helvetica, Arial, sans-serif;
+       a{
+         text-decoration: none;
+         color: $text-gray;
+       }
+    }
   }
+
+  &.bg-light-gray &__title{
+    h4{
+      color: $thought-blue;
+      a{
+        color: $thought-blue;
+      }
+    }
+  }
+
   &__content{
     color: $text-gray;
     font-family: SourceSansPro,sans-serif;
@@ -28,6 +46,10 @@
     margin-bottom: 0px;
     font-family: SourceSansPro,sans-serif;
     font-weight: 400;
+  }
+
+  &__ref {
+    margin-left: 0px;
   }
 
   &__social {

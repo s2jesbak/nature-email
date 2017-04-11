@@ -11,9 +11,12 @@
   //background: $body-background !important;
 }
 
+img {
+  border: none;
+}
 
 .alt-font {
-  font-family: 'Lora', serif !important;
+  font-family: Helvetica, Arial, sans-serif !important;
 }
 .underline {
   text-decoration: underline !important;
@@ -62,15 +65,19 @@
     height: auto;
   }
 
-  th {
+  &__image th {
     padding-left: 0px !important;
     padding-right: 0px !important;
+    padding-bottom: 3px !important;
   }
 
   &__caption {
-    padding-top: 0px;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    text-align: left;
     margin: 0px;
     padding: 10px;
+    padding-top: 0px;
     color: $dark-gray;
     font-size: 12px;
     font-family: SourceSansPro, sans-serif;
@@ -87,32 +94,46 @@
 .thought {
   background-color: $thought-blue;
 
+  &--gray {
+    background-color: $light-gray;
+  }
+
   .wrapper-inner {
     padding-top: $global-padding;
   }
 
   &__title {
     color: $white;
-    font-family: 'Lora', serif;
+    font-family: Helvetica, Arial, sans-serif;
     padding-bottom: 0px !important;
     margin: 0px;
     font-size: 25px;
   }
+
   &__content {
     color: $light-blue;
     font-size: 20px;
-    font-family: 'Lora', serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     line-height: 1.5;
     margin: 0px;
   }
+
   &__footer {
     font-size: 14px;
     margin: 0px;
     color: $white;
     font-family: SourceSansPro, sans-serif;
     font-weight: 400;
+  }
 
+  &--gray &__content{
+      color: $thought-blue;
+  }
+
+  &--gray &__title,
+  &--gray &__footer {
+    color: $text-gray;
   }
 }
 

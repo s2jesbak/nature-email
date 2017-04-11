@@ -6,6 +6,10 @@
   	padding-top: 40px;
   }
 
+  img {
+    color: white;
+  }
+
   &__container {
     padding-bottom: 5px !important;
   }
@@ -17,6 +21,7 @@
     color: $white;
     font-size: 12px;
     font-family: SourceSansPro,sans-serif;
+    font-weight: 400;
   }
 }
 
@@ -29,7 +34,7 @@
 
   h2 {
     font-size: 20px;
-    font-family: Lora, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
     margin-bottom:0px;
     margin: 0px;
@@ -49,7 +54,7 @@
 
 
   &__text {
-    color: $dark-gray;
+    color: $text-gray;
     font-family: SourceSansPro,sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -69,7 +74,7 @@
 .letter-footer {
 
   &__title {
-    font-family: 'Lora', serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: $red;
     font-size: 50px;
     margin-bottom: 0;
